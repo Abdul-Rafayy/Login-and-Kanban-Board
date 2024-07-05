@@ -1,0 +1,175 @@
+@font-face {
+    font-family: My font;
+    src: url(font/Poppins-Regular.ttf);
+}
+
+html,
+body {
+    font-family: My font;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 8%;
+}
+
+.container {
+    background-color: #F5F5F5;
+    padding: 20px;
+    box-shadow: 0 0 10px gray;
+    width: 90%;
+    text-align: center;
+    max-height: 80vh;
+    overflow-y: auto;
+    width: calc(100% - 30px);
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+#deleteAllButton {
+    background: #dc3545;
+}
+
+#deleteAllButton:hover {
+    background: #c82333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #d8605b;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+}
+
+li button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+li button:hover {
+    background: #0056b3;
+}
+
+li .deleteButton {
+    background: #dc3545;
+}
+
+li .deleteButton:hover {
+    background: #c82333;
+}
+
+li .editButton {
+    background: #ffc107;
+}
+
+li .editButton:hover {
+    background: #e0a800;
+}
+
+li .saveButton {
+    background: #28a745;
+}
+
+li .saveButton:hover {
+    background: #218838;
+}
+
+input[type="checkbox"] {
+    width: 5%;
+    height: 5vh;
+    accent-color: #28a745;
+}
+
+.taskCounters {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.taskCounters p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li button {
+        width: 100%;
+        margin: 5px 0 0;
+    }
+}
+
+
+li {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+}
